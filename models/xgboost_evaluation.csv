@@ -1,0 +1,5 @@
+horizon_days,split,rows_used,XGBoost_MAE,XGBoost_RMSE,Persistence_MAE,skill_vs_persistence,skill_vs_persistence_pct,selected_config
+16,validation,21180,0.005072378483351634,0.011637046324803613,0.005446,0.06860475884105155,6.8604758841051545,"{""n_estimators"": 400, ""max_depth"": 5, ""learning_rate"": 0.03, ""subsample"": 0.85, ""colsample_bytree"": 0.9}"
+16,test,42300,0.004710735520713185,0.010967878748694251,0.00484,0.026707537042730323,2.6707537042730323,"{""n_estimators"": 400, ""max_depth"": 5, ""learning_rate"": 0.03, ""subsample"": 0.85, ""colsample_bytree"": 0.9}"
+32,validation,20223,0.006047201072086093,0.01407037208183862,0.006907,0.12448225393280832,12.448225393280833,"{""n_estimators"": 400, ""max_depth"": 5, ""learning_rate"": 0.03, ""subsample"": 0.85, ""colsample_bytree"": 0.9}"
+32,test,40395,0.005536362406977108,0.01271208433056646,0.006193,0.10602899935780585,10.602899935780584,"{""n_estimators"": 400, ""max_depth"": 5, ""learning_rate"": 0.03, ""subsample"": 0.85, ""colsample_bytree"": 0.9}"

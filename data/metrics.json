@@ -1,0 +1,35 @@
+{
+  "model_name": "XGBoost",
+  "metric": "MAE",
+  "lower_is_better": true,
+  "evaluation_protocol": "Train 2015–2022 · validation 2023 · frozen-model test 2024–2025",
+  "evaluation_context": "Held-out historical evaluation",
+  "horizons": {
+    "16": {
+      "validation": {
+        "model_mae": 0.005072,
+        "baseline_mae": 0.005446,
+        "improvement_pct": 6.9
+      },
+      "test": {
+        "model_mae": 0.004711,
+        "baseline_mae": 0.00484,
+        "improvement_pct": 2.7
+      }
+    },
+    "32": {
+      "validation": {
+        "model_mae": 0.006047,
+        "baseline_mae": 0.006907,
+        "improvement_pct": 12.4
+      },
+      "test": {
+        "model_mae": 0.005536,
+        "baseline_mae": 0.006193,
+        "improvement_pct": 10.6
+      }
+    }
+  },
+  "note": "Metrics were read from the supplied BADIA_AI_XGBoost_results artifact. The demo build does not re-fit the model.",
+  "is_live": false
+}

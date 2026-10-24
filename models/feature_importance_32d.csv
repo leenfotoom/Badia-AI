@@ -1,0 +1,13 @@
+feature,importance
+ndvi_anomaly_current,0.4293184
+period_cos,0.079578415
+longitude,0.06387062
+temperature_30d_c,0.06307838
+ndvi,0.055416368
+period_sin,0.05200996
+rain_16d_mm,0.050323565
+latitude,0.04366919
+soil_moisture_30d,0.04304262
+rain_90d_mm,0.04246161
+area_km2,0.03988116
+rain_30d_mm,0.037349727

@@ -1,0 +1,46 @@
+# Dependencies and virtual environments
+.venv/
+venv/
+frontend/node_modules/
+frontend/.npm-cache/
+frontend/.pnpm-store/
+
+# Local secrets / credentials (never commit actual .env files)
+.env
+.env.*
+**/.env
+**/.env.*
+!.env.example
+!**/.env.example
+*.pem
+*.p12
+*.pfx
+*credentials*.json
+
+# Build artifacts and runtime state
+frontend/dist/
+.run/
+**/__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.log
+*.pid
+*.tmp
+*.bak
+
+# Machine-specific metadata
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# HTTP download cache (regenerable; model/snapshot data are retained)
+data/daily/http_cache/
+
+# Private handoff / competition materials (not needed to run the app)
+BADIA_AI_Competition_Report_AR_Sajida_Banat.docx
+CLAUDE_HANDOFF_PROMPT.txt
+HANDOFF_INCOMPLETE.md
+HANDOFF_MANIFEST.json
+HANDOFF_STATUS.md

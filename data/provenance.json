@@ -1,0 +1,37 @@
+{
+  "generated_from": [
+    {
+      "name": "badia_all_years_with_seasonal_anomaly.csv",
+      "bytes": 82788912,
+      "sha256": "3b1763e9947ba7a1b6ad0b938b434aa520a5bbc5ec20b7bcd9aa4a90f0e98f5b"
+    },
+    {
+      "name": "BADIA_AI_XGBoost_results.zip",
+      "bytes": 3118937,
+      "sha256": "d891f860d21163114c445eaf3cb5919d4793183a526abfa62bb83811f12257e1"
+    },
+    {
+      "name": "BADIA_AI_targets_16d_32d.zip",
+      "bytes": 55142489,
+      "sha256": "cad583ad70c5f466c0d252f7383f3a3f10af8458ee08a10d72f93fd6f9122557"
+    },
+    {
+      "name": "BADIA_AI_seasonal_anomaly_ready.zip",
+      "bytes": 34875919,
+      "sha256": "e8c64cebe6d12c3e727b3d308e4993454be0ab3b91f42d6d89539be21777cf95"
+    },
+    {
+      "name": "BADIA_AI_prepared_2015_2025.zip",
+      "bytes": 64699697,
+      "sha256": "dbf0af55f54bc3beba0ea7665cd593c141e0be569f63af4a457dc38a943a6460"
+    },
+    {
+      "name": "BADIA_AI_baseline_evaluation.csv",
+      "bytes": 731,
+      "sha256": "2a92220a73687022a90c9b20aee2a98b8496e007750eb95c393774be10c2eb51"
+    }
+  ],
+  "generated_snapshot": "Latest common model-evaluable historical-input demo (2025 period 21; nominal period end 2 Dec 2025)",
+  "retrained": false,
+  "saved_models_reused": true
+}

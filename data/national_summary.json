@@ -1,0 +1,63 @@
+{
+  "scope": "Jordan",
+  "snapshot_date": "2025-12-02",
+  "snapshot_label": "Latest common model-evaluable historical-input demo (2025 period 21; nominal period end 2 Dec 2025)",
+  "horizons": {
+    "16": {
+      "scope": "Jordan",
+      "horizon_days": 16,
+      "snapshot_date": "2025-12-02",
+      "snapshot_label": "Latest common model-evaluable historical-input demo (2025 period 21; nominal period end 2 Dec 2025)",
+      "summary": {
+        "total_cells": 968,
+        "available_cells": 962,
+        "mean_risk_score": 84.1,
+        "high_count": 879,
+        "moderate_count": 64,
+        "low_count": 19,
+        "na_count": 6
+      },
+      "levels": {
+        "low": 19,
+        "moderate": 64,
+        "high": 879,
+        "na": 6
+      },
+      "prediction_reproduction_check": {
+        "saved_rows_compared": 961,
+        "max_abs_difference": 8.078718180537514e-10,
+        "passed": true
+      },
+      "is_live": false
+    },
+    "32": {
+      "scope": "Jordan",
+      "horizon_days": 32,
+      "snapshot_date": "2025-12-02",
+      "snapshot_label": "Latest common model-evaluable historical-input demo (2025 period 21; nominal period end 2 Dec 2025)",
+      "summary": {
+        "total_cells": 968,
+        "available_cells": 962,
+        "mean_risk_score": 78.3,
+        "high_count": 800,
+        "moderate_count": 138,
+        "low_count": 24,
+        "na_count": 6
+      },
+      "levels": {
+        "low": 24,
+        "moderate": 138,
+        "high": 800,
+        "na": 6
+      },
+      "prediction_reproduction_check": {
+        "saved_rows_compared": 898,
+        "max_abs_difference": 1.736288071652048e-09,
+        "passed": true
+      },
+      "is_live": false
+    }
+  },
+  "is_live": false,
+  "disclaimer": "Satellite-derived vegetation anomaly risk indicator; not a field-verified desertification diagnosis, not a causal claim, and not a live forecast."
+}

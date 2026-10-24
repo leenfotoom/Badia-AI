@@ -1,0 +1,43 @@
+{
+  "project_name": "BADIA AI",
+  "scope": "Jordan",
+  "snapshot_date": "2026-08-28",
+  "modis_period_start": "2026-08-13",
+  "period_index": 15,
+  "near_real_time": true,
+  "horizons": {
+    "16": {
+      "horizon_days": 16,
+      "total_cells": 968,
+      "available_cells": 968,
+      "mean_risk_score": 26.05,
+      "median_risk_score": 18.4,
+      "low_count": 721,
+      "moderate_count": 190,
+      "high_count": 57,
+      "risk_reference_n": 7744,
+      "top_cell_id": "16,349",
+      "top_risk_score": 99.6
+    },
+    "32": {
+      "horizon_days": 32,
+      "total_cells": 968,
+      "available_cells": 968,
+      "mean_risk_score": 27.98,
+      "median_risk_score": 22.25,
+      "low_count": 681,
+      "moderate_count": 220,
+      "high_count": 67,
+      "risk_reference_n": 7743,
+      "top_cell_id": "51,355",
+      "top_risk_score": 97.0
+    }
+  },
+  "risk_definition": "Risk score = empirical percentile (0–100) of predicted vegetation-stress severity (-predicted anomaly) against reconstructed 2015–2022 target anomalies for the same source period and horizon. It is a relative index, not a probability.",
+  "risk_thresholds": {
+    "Low": "0.0–39.9",
+    "Moderate": "40.0–69.9",
+    "High": "70.0–100.0"
+  },
+  "reference_note": "Historical target anomalies were reconstructed from the Earth Engine export using the validated same-period mean baseline method. This follows the original BADIA risk-scoring logic but is not byte-identical to the unavailable original seasonal-anomaly source table."
+}

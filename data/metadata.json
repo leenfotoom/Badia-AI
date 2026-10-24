@@ -1,0 +1,42 @@
+{
+  "project_name": "BADIA AI",
+  "scope": "Jordan",
+  "data_period": "2015–2025",
+  "snapshot_year": 2025,
+  "snapshot_period": 21,
+  "snapshot_date": "2025-12-02",
+  "snapshot_label": "Latest common model-evaluable historical-input demo (2025 period 21; nominal period end 2 Dec 2025)",
+  "serving_mode": "saved_local_snapshot",
+  "is_live": false,
+  "source": "Prepared satellite-derived vegetation and environmental observations, seasonal anomaly tables, and saved XGBoost model artifacts supplied with the project.",
+  "model_features": [
+    "ndvi",
+    "ndvi_anomaly_current",
+    "rain_16d_mm",
+    "rain_30d_mm",
+    "rain_90d_mm",
+    "temperature_30d_c",
+    "soil_moisture_30d",
+    "period_sin",
+    "period_cos",
+    "latitude",
+    "longitude",
+    "area_km2"
+  ],
+  "risk_definition": "Risk score = empirical percentile (0–100) of predicted vegetation-stress severity (-predicted anomaly) against 2015–2022 target anomalies for the same source period and horizon. It is a relative index, not a probability.",
+  "risk_thresholds": {
+    "Low": "0.0–39.9",
+    "Moderate": "40.0–69.9",
+    "High": "70.0–100.0",
+    "N/A": "Core current vegetation signal unavailable"
+  },
+  "top_factors_method": "Per-cell TreeSHAP contribution magnitude from the saved model. Factors are model associations, not causal explanations.",
+  "geometry_note": "Map polygons are approximate squares reconstructed from each centroid and area; they are not official cadastral or administrative boundaries.",
+  "disclaimer": "Satellite-derived vegetation anomaly risk indicator; not a field-verified desertification diagnosis, not a causal claim, and not a live forecast.",
+  "limitations": [
+    "No 2026 inputs were supplied; the demo uses the latest common model-evaluable 2025 period.",
+    "The map is retrospective and intended for product demonstration and decision support.",
+    "Field observations are required before operational or land-management decisions.",
+    "The risk index is calibrated to historical seasonal distributions and must not be read as probability."
+  ]
+}

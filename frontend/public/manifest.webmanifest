@@ -1,0 +1,32 @@
+{
+  "name": "BADIA AI — بادية AI لمتابعة الغطاء النباتي",
+  "short_name": "BADIA AI",
+  "description": "خريطة عربية وإنجليزية تساعد على ترتيب متابعة إشارات الإجهاد النباتي في الأردن.",
+  "lang": "ar",
+  "dir": "rtl",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#15130f",
+  "theme_color": "#211c16",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

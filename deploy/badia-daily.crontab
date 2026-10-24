@@ -1,0 +1,16 @@
+# BADIA daily layer - Linux/macOS cron TEMPLATE.
+# First replace /opt/badia with the absolute project path. Add the two job lines with `crontab -e`;
+# do NOT run `crontab deploy/badia-daily.crontab`, because that replaces the user's entire crontab.
+# Times use the host's local timezone; configure the host for Asia/Amman if 03:40 Amman time matters.
+# Both commands acquire the CLI's shared daily-operation lock. A provider failure/fallback exits nonzero;
+# a lock conflict also exits nonzero instead of allowing update and retraining writes to overlap.
+
+# Weather forecast refresh every 6 h. mkdir runs before shell redirection so a clean install can log successfully.
+15 */6 * * *  cd "/opt/badia" && mkdir -p data/daily && ./.venv/bin/python -u -m backend.app.daily.cli update >> data/daily/cron.log 2>&1
+# Retrain check weekly. It checks cadence against local metadata BEFORE network acquisition. If not due, it exits
+# without a download. When due, it acquires verified increments, trains a candidate, and applies champion gates.
+40 3 * * 0    cd "/opt/badia" && mkdir -p data/daily && ./.venv/bin/python -u -m backend.app.daily.cli retrain >> data/daily/cron.log 2>&1
+
+# Controlled maintenance can separate the network and CPU phases; these are intentionally not recurring jobs:
+#   ./.venv/bin/python -m backend.app.daily.cli acquire
+#   ./.venv/bin/python -m backend.app.daily.cli train-local
